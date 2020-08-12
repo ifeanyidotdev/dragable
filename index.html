@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draggable</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+	<div class="parent">
+		<div class="origin">
+			Todo List
+			<div class="draggable" id="draggable-1" draggable="true" ondragstart="onDragStart(event);">
+				thing one
+			</div>
+			<div class="draggable" id="draggable-2" draggable="true" ondragstart="onDragStart(event);">
+				thing two 
+			</div>
+			<div class="draggable" id="draggable-4" draggable="true" ondragstart="onDragStart(event);">
+				thing three
+			</div>
+		</div>
+		<div class="dropzone" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+			dropzone
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
